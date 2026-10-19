@@ -1,0 +1,10 @@
+n = int(input("Enter a number:"))
+a = 0
+b = 1
+print("Golden ratio to inputted number:")
+
+while a <= n:
+    print(a)
+    nextnum = a + b
+    a = b
+    b = nextnum
