@@ -1,0 +1,17 @@
+n = int(input("Enter number:"))
+temp = n
+n_digits = 0
+while temp > 0:
+    n_digits = n_digits + 1
+    temp = temp//10
+
+temp = n
+armstrong_sum = 0
+while temp > 0:
+    digit = temp % 10
+    armstrong_sum = digit**n_digits + armstrong_sum
+    temp = temp//10
+if armstrong_sum == n:
+    print("The number is an armstrong number")
+else:
+    print("The number isn't an armstrong number")

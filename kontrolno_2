@@ -1,0 +1,28 @@
+n = 1
+count = 0
+sum = 0
+dvucif=0
+count_d = 0
+sredno = float 
+while (n>=0):
+
+    n = int(input("Enter number n:"))
+    if n < 0 and count == 0:
+        print("No data")
+    else:
+        print("Enter one more number")
+        if n < 0:
+            break
+        else:
+            count = count+1
+            sum = sum + n
+            while(n>0):
+                count_d = count_d+1
+                n = n//10
+            if(count_d>1 and count_d<3):
+                dvucif = dvucif+1
+            sredno = sum//count
+print(sum+n)
+print(dvucif)
+print(sredno)
+        

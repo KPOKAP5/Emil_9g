@@ -1,0 +1,8 @@
+n = str(input("Enter string:"))
+result = " "
+for i in range(len(n)):
+    if i>0 and n[i] == " " and n[i-1] == " ":
+        continue
+    result = result + n[i]
+print (result)
+    

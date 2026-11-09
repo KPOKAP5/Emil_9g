@@ -1,0 +1,15 @@
+s = input("Enter number:")
+
+palindrom = True
+for i in range(len(s) // 2):
+    if s[i] != s[-1 - i]:
+        palindrom = False
+        break
+if palindrom:
+    print("The number is a palindrome")
+else:
+    print("The number isn't a palindrome")
+
+
+
+
